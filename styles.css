@@ -1,0 +1,53 @@
+.container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    font-family: Arial, sans-serif; 
+}
+
+.carousel {
+    width: 30%;
+    height: 100vh;
+    overflow-y: auto;
+    position: sticky;
+    top: 0;
+    background-color: #f0f0f0; 
+    border-right: 1px solid #ccc; 
+}
+
+.carousel-content {
+    z-index: 2;
+    padding: 20px; 
+}
+
+.carousel-content img {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 5px; 
+}
+
+.content {
+    width: 70%;
+    height: 100vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+.sticky-content {
+    position: sticky;
+    top: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    z-index: 2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.additional-content {
+    padding: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
